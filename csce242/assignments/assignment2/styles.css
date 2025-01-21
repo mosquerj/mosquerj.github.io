@@ -1,0 +1,155 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif; /* Change the font to something more appealing */
+    background-color: #f4f4f4; /* Light background color */
+    background-image: url('background-image.jpg'); /* Background image */
+    background-size: cover;
+    color: #333; /* Default text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none; /* Remove default list bullets */
+    padding: 0;
+    text-align: center; /* Center align the navigation */
+    background-color: #007bff; /* Blue background color */
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Horizontal list items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Text color for links */
+    padding: 14px 20px; /* Add padding to links */
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3; /* Darker blue when hovered */
+    color: #fff; /* Ensure text stays white on hover */
+}
+
+/* Main content section */
+#content {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white; /* White background for readability */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow around content */
+}
+
+/* Heading styling */
+h1 {
+    color: #333; /* Dark text color */
+    text-align: center;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Light border color */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff; /* Blue background for headers */
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9; /* Light background for table cells */
+}
+
+table tr:nth-child(even) td {
+    background-color: #e9ecef; /* Alternate row color */
+}
+
+/* Image styling */
+img {
+    max-width: 100%; /* Ensure images fit within their container */
+    height: auto;
+    border: 3px solid #ddd; /* Add border around images */
+    margin: 10px 0;
+}
+
+/* Styling for lists */
+ul {
+    list-style-type: disc; /* Bullet points */
+    margin-left: 20px;
+}
+
+/* Styling for links (outside of navigation) */
+a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Class-based styling */
+.about-section {
+    background-color: #e9ecef; /* Light background for About section */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.picture-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.picture-gallery img {
+    width: 45%; /* Two images per row */
+}
+
+/* Contact Us form styling */
+form {
+    margin-top: 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
