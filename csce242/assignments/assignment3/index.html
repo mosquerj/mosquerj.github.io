@@ -3,30 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 3</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>Layout with Flex</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
+    <header>
         <h1>My Website</h1>
-        <nav class="navigation">
+    </header>
+    <div class="container">
+        <nav>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Store</a></li>
                 <li><a href="#">Staff</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Contact Us</a></li>
             </ul>
         </nav>
-    </header>
-    <main class="content">
-        <section>
-            <h2>Welcome!</h2>
-            <p>This is a demonstration of flexbox layout.</p>
-        </section>
-    </main>
-    <footer class="footer">
+        <main>
+            <section>
+                <article>
+                    <h2>Article Heading</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec est vitae risus suscipit malesuada.</p>
+                    <img src="https://via.placeholder.com/400" alt="Placeholder image">
+                </article>
+            </section>
+            <aside>
+                <h2>Sidebar</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </aside>
+        </main>
+    </div>
+    <footer>
         <p>@jonahmosquera.com</p>
     </footer>
 </body>
