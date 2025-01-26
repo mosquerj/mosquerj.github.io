@@ -192,37 +192,3 @@ article {
     }
 }
 
-/* New styles for Big Ideas section */
-.idea {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.idea-left {
-    flex-direction: row; /* Align image on the left */
-}
-
-.idea-right {
-    flex-direction: row-reverse; /* Align image on the right */
-}
-
-.idea img {
-    max-width: 100%;
-    height: auto;
-    margin-right: 20px; /* Space between the text and image */
-}
-
-.idea-content {
-    max-width: 60%;
-}
-
-.idea-content h3 {
-    margin-top: 0;
-    font-size: 1.5rem;
-}
-
-.idea-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
