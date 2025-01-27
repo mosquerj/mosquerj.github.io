@@ -19,7 +19,7 @@ body {
     flex-direction: column;
 }
 #main-header {
-    background-color: white;
+    background-color: #f1e9d2;
     padding: 10px;
 }
 #main-header h1 {
@@ -116,7 +116,7 @@ article {
 }
 
 #main-footer {
-    background-color: white;
+    background-color: #f1e9d2;
     padding: 20px;
 }
 
