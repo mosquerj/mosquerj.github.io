@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Javascript Project</h1>
+        <h2>Exploring JavaScript Features</h2>
+    </header>
+
+    <div class="wrapper">
+        <div class="card" id="greeting-card" onclick="displayGreeting()">
+            <h3>Greetings</h3>
+            <div id="greeting-output"></div>
+        </div>
+
+        <div class="card" id="color-card">
+            <h3>Color Picker</h3>
+            <input type="color" id="color-selector" value="#000000">
+            <div id="star-icon">★</div>
+        </div>
+
+        <div class="card" id="image-card">
+            <h3>Image Switcher</h3>
+            <img id="dynamic-image" src="pictures/hippos.jpg" alt="Dynamic Image">
+        </div>
+    </div>
+
+    <footer>
+        <p>@mosquerj.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
