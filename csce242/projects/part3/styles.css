@@ -29,18 +29,12 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Tab Content Styles */
-.tab-content {
+/* Content Styles */
+.content {
   padding: 2rem;
-  display: none; /* Hide all tabs by default */
 }
 
-/* Show the targeted tab */
-.tab-content:target {
-  display: block;
-}
-
-/* Home Tab Styles */
+/* Home Page Styles */
 .about {
   margin-bottom: 2rem;
 }
@@ -56,7 +50,7 @@ nav a:hover {
   height: auto;
 }
 
-/* Submit a Recipe Tab Styles */
+/* Submit a Recipe Page Styles */
 form textarea {
   width: 100%;
   height: 150px;
@@ -77,7 +71,7 @@ form button:hover {
   background-color: #555;
 }
 
-/* Browse Tab Styles */
+/* Browse Page Styles */
 .search-bar {
   margin-bottom: 2rem;
 }
@@ -114,7 +108,7 @@ form button:hover {
   height: auto;
 }
 
-/* Recipe of the Day Tab Styles */
+/* Recipe of the Day Page Styles */
 .recipe-of-the-day {
   text-align: center;
 }
