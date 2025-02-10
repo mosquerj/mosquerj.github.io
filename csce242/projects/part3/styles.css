@@ -29,41 +29,99 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Hero Section */
-.hero {
-  background-color: #f4f4f4;
+/* Tab Content Styles */
+.tab-content {
   padding: 2rem;
-  text-align: center;
+  display: none; /* Hide all tabs by default */
 }
 
-.hero h2 {
-  margin: 0;
+/* Show the targeted tab */
+.tab-content:target {
+  display: block;
 }
 
-/* Section Styles */
-.about, .submit, .browse, .recipe, .contact {
-  padding: 2rem;
-  text-align: center;
-}
-
+/* Home Tab Styles */
 .about {
-  background-color: #e2e2e2;
+  margin-bottom: 2rem;
 }
 
-.submit {
-  background-color: #d1d1d1;
+.featured-recipe {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
-.browse {
-  background-color: #c0c0c0;
+.featured-recipe img {
+  max-width: 300px;
+  height: auto;
 }
 
-.recipe {
-  background-color: #afafaf;
+/* Submit a Recipe Tab Styles */
+form textarea {
+  width: 100%;
+  height: 150px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-family: Arial, sans-serif;
 }
 
-.contact {
-  background-color: #9e9e9e;
+form button {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+/* Browse Tab Styles */
+.search-bar {
+  margin-bottom: 2rem;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  width: 200px;
+}
+
+.search-bar button {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #555;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.recipe-card {
+  text-align: center;
+}
+
+.recipe-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Recipe of the Day Tab Styles */
+.recipe-of-the-day {
+  text-align: center;
+}
+
+.recipe-of-the-day img {
+  max-width: 300px;
+  height: auto;
 }
 
 /* Footer Styles */
