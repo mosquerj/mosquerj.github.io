@@ -9,7 +9,12 @@
 <body>
   <header>
     <h1>Mama’s Meatballs</h1>
-    <nav>
+    <div class="hamburger" onclick="toggleNav()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav id="nav">
       <a href="index.html">Home</a>
       <a href="submit.html">Submit a Recipe</a>
       <a href="browse.html">Browse</a>
@@ -37,23 +42,18 @@
         <img src="https://place-hold.it/150" alt="Recipe 3">
         <p>Veggie Meatballs</p>
       </div>
-      <div class="recipe-card">
-        <img src="https://place-hold.it/150" alt="Recipe 4">
-        <p>Swedish Meatballs</p>
-      </div>
-      <div class="recipe-card">
-        <img src="https://place-hold.it/150" alt="Recipe 5">
-        <p>BBQ Meatballs</p>
-      </div>
-      <div class="recipe-card">
-        <img src="https://place-hold.it/150" alt="Recipe 6">
-        <p>Cheesy Meatballs</p>
-      </div>
     </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Mama’s Meatballs</p>
   </footer>
+
+  <script>
+    function toggleNav() {
+      const nav = document.getElementById("nav");
+      nav.classList.toggle("active");
+    }
+  </script>
 </body>
 </html>

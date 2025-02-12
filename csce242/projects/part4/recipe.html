@@ -9,7 +9,12 @@
 <body>
   <header>
     <h1>Mama’s Meatballs</h1>
-    <nav>
+    <div class="hamburger" onclick="toggleNav()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav id="nav">
       <a href="index.html">Home</a>
       <a href="submit.html">Submit a Recipe</a>
       <a href="browse.html">Browse</a>
@@ -44,5 +49,12 @@
   <footer>
     <p>&copy; 2025 Mama’s Meatballs</p>
   </footer>
+
+  <script>
+    function toggleNav() {
+      const nav = document.getElementById("nav");
+      nav.classList.toggle("active");
+    }
+  </script>
 </body>
 </html>

@@ -1,37 +1,67 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 /* Header Styles */
 header {
-  background-color: #333;
+  background-color: #008C45; /* Green from Italian flag */
   color: #fff;
   padding: 1rem;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header h1 {
   margin: 0;
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
   margin: 0 1rem;
+  font-size: 1rem;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
+/* Hamburger Menu for Mobile */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
 /* Content Styles */
 .content {
   padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Home Page Styles */
@@ -43,11 +73,38 @@ nav a:hover {
   display: flex;
   align-items: center;
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .featured-recipe img {
   max-width: 300px;
   height: auto;
+  border-radius: 10px;
+}
+
+.popular-recipes {
+  margin-top: 2rem;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.recipe-card {
+  text-align: center;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.recipe-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 /* Submit a Recipe Page Styles */
@@ -57,18 +114,21 @@ form textarea {
   padding: 1rem;
   margin-bottom: 1rem;
   font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 form button {
   padding: 0.5rem 1rem;
-  background-color: #333;
+  background-color: #CD212A; /* Red from Italian flag */
   color: #fff;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 form button:hover {
-  background-color: #555;
+  background-color: #a61b22;
 }
 
 /* Browse Page Styles */
@@ -79,34 +139,21 @@ form button:hover {
 .search-bar input {
   padding: 0.5rem;
   width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .search-bar button {
   padding: 0.5rem 1rem;
-  background-color: #333;
+  background-color: #CD212A; /* Red from Italian flag */
   color: #fff;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .search-bar button:hover {
-  background-color: #555;
-}
-
-.recipe-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.recipe-card {
-  text-align: center;
-  cursor: pointer;
-}
-
-.recipe-card img {
-  max-width: 100%;
-  height: auto;
+  background-color: #a61b22;
 }
 
 /* Recipe of the Day Page Styles */
@@ -117,28 +164,42 @@ form button:hover {
 .recipe-of-the-day img {
   max-width: 300px;
   height: auto;
+  border-radius: 10px;
+}
+
+/* Contact Us Page Styles */
+.contact-info {
+  margin-top: 2rem;
 }
 
 /* Footer Styles */
 footer {
-  background-color: #333;
+  background-color: #008C45;
   color: #fff;
   text-align: center;
   padding: 1rem;
-  position: fixed;
-  bottom: 0;
+  position: relative;
   width: 100%;
+  margin-top: 2rem;
 }
 
-/* Media Queries for Mobile Layout */
 @media (max-width: 768px) {
   header h1 {
     font-size: 1.5rem;
   }
 
-  nav a {
-    display: block;
-    margin: 0.5rem 0;
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
   }
 
   .featured-recipe {
@@ -149,12 +210,14 @@ footer {
   .recipe-grid {
     grid-template-columns: 1fr;
   }
+}
 
-  .recipe-card img {
+@media (max-width: 480px) {
+  .featured-recipe img {
     max-width: 100%;
   }
 
-  footer {
-    position: static;
+  .search-bar input {
+    width: 100%;
   }
 }
