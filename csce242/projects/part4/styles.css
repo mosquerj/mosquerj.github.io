@@ -1,15 +1,13 @@
-/* General Styles */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #F9F9F9; /* Light gray background */
+  color: #333; /* Dark gray text */
 }
 
-/* Header Styles */
 header {
   background-color: #008C45; /* Green from Italian flag */
   color: #fff;
@@ -41,6 +39,7 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+  color: #A8D8B9; /* Light green for hover */
 }
 
 /* Hamburger Menu for Mobile */
@@ -67,6 +66,10 @@ nav a:hover {
 /* Home Page Styles */
 .about {
   margin-bottom: 2rem;
+  background-color: #fff; /* White background */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .featured-recipe {
@@ -74,6 +77,10 @@ nav a:hover {
   align-items: center;
   gap: 2rem;
   margin-bottom: 2rem;
+  background-color: #fff; /* White background */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .featured-recipe img {
@@ -99,6 +106,11 @@ nav a:hover {
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px); /* Adds a hover effect */
 }
 
 .recipe-card img {
@@ -125,10 +137,11 @@ form button {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 form button:hover {
-  background-color: #a61b22;
+  background-color: #A61B22; /* Darker red for hover */
 }
 
 /* Browse Page Styles */
@@ -150,15 +163,20 @@ form button:hover {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .search-bar button:hover {
-  background-color: #a61b22;
+  background-color: #A61B22; /* Darker red for hover */
 }
 
 /* Recipe of the Day Page Styles */
 .recipe-of-the-day {
   text-align: center;
+  background-color: #fff; /* White background */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .recipe-of-the-day img {
@@ -170,11 +188,15 @@ form button:hover {
 /* Contact Us Page Styles */
 .contact-info {
   margin-top: 2rem;
+  background-color: #fff; /* White background */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer Styles */
 footer {
-  background-color: #008C45;
+  background-color: #CD212A; /* Red from Italian flag */
   color: #fff;
   text-align: center;
   padding: 1rem;
@@ -183,6 +205,7 @@ footer {
   margin-top: 2rem;
 }
 
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   header h1 {
     font-size: 1.5rem;
