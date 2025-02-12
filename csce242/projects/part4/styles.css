@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -8,6 +9,7 @@ body {
   color: #333; /* Dark gray text */
 }
 
+/* Header Styles */
 header {
   background-color: #008C45; /* Green from Italian flag */
   color: #fff;
@@ -95,7 +97,7 @@ nav a:hover {
 
 .recipe-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
   gap: 1rem;
 }
 
@@ -231,7 +233,7 @@ footer {
   }
 
   .recipe-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -242,5 +244,9 @@ footer {
 
   .search-bar input {
     width: 100%;
+  }
+
+  .recipe-grid {
+    grid-template-columns: 1fr;
   }
 }
