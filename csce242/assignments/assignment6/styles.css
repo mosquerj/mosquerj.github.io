@@ -2,24 +2,24 @@
 body {
     font-family: Arial, sans-serif; /* Use a clean, sans-serif font */
     text-align: center; /* Center-align all text */
-    background-color: #2C3E50; /* Dark blue background for the page */
-    color: #ECF0F1; /* Light gray text color for readability */
+    background-color: #1A1A2E; /* Dark navy background for the page */
+    color: #E0E0E0; /* Light gray text color for readability */
     margin: 0; /* Remove default margin */
 }
 
 /* Header Styles */
 header h1, header h2 {
-    color: #ECF0F1; /* Light gray color for header text */
+    color: #E0E0E0; /* Light gray color for header text */
 }
 
 /* Section Headings */
 h2 {
-    color: #F39C12; /* Orange color for section headings */
+    color: #FF6F61; /* Coral color for section headings */
 }
 
 /* Navigation Menu */
 nav {
-    background-color: #34495E; /* Slightly lighter blue for the nav background */
+    background-color: #16213E; /* Darker navy for the nav background */
     padding: 10px; /* Add some padding for spacing */
 }
 
@@ -36,7 +36,7 @@ nav {
 
 #menu a {
     text-decoration: none; /* Remove underline from links */
-    color: #ECF0F1; /* Light gray text color for links */
+    color: #E0E0E0; /* Light gray text color for links */
     cursor: pointer; /* Show pointer cursor on hover */
 }
 
@@ -47,14 +47,14 @@ nav {
     border: none; /* Remove default button border */
     font-size: 20px; /* Increase font size for visibility */
     cursor: pointer; /* Show pointer cursor on hover */
-    color: #ECF0F1; /* Light gray color for the button text */
+    color: #E0E0E0; /* Light gray color for the button text */
 }
 
 /* Exercise Sections */
 #exercise1, #exercise2 {
     display: none; /* Hide sections by default */
     margin-top: 20px; /* Add spacing above the sections */
-    background-color: #34495E; /* Slightly lighter blue for section backgrounds */
+    background-color: #16213E; /* Darker navy for section backgrounds */
     padding: 20px; /* Add padding inside the sections */
     border-radius: 10px; /* Round the corners of the sections */
     width: 50%; /* Set a fixed width for the sections */
@@ -74,7 +74,7 @@ nav {
 
 /* Button Styling */
 button {
-    background-color: #E74C3C; /* Red background for buttons */
+    background-color: #FF6F61; /* Coral background for buttons */
     color: white; /* White text color for buttons */
     border: none; /* Remove default button border */
     padding: 10px 15px; /* Add padding for button size */
@@ -85,7 +85,7 @@ button {
 }
 
 button:hover {
-    background-color: #C0392B; /* Darker red on hover for interactivity */
+    background-color: #E2584A; /* Darker coral on hover for interactivity */
 }
 
 /* Heart Container */
