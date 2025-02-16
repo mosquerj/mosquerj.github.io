@@ -5,7 +5,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   line-height: 1.6;
-  background-color: #F9F9F9; /* Light gray background */
+  background-color: #F5F5DC; /* Beige background */
   color: #333; /* Dark gray text */
 }
 
@@ -63,15 +63,17 @@ nav a:hover {
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  background-color: #fff; /* White background for content */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Home Page Styles */
 .about {
   margin-bottom: 2rem;
-  background-color: #fff; /* White background */
   padding: 1rem;
+  background-color: #F9F9F9; /* Light gray background */
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .featured-recipe {
@@ -79,10 +81,9 @@ nav a:hover {
   align-items: center;
   gap: 2rem;
   margin-bottom: 2rem;
-  background-color: #fff; /* White background */
   padding: 1rem;
+  background-color: #F9F9F9; /* Light gray background */
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .featured-recipe img {
@@ -175,10 +176,9 @@ form button:hover {
 /* Recipe of the Day Page Styles */
 .recipe-of-the-day {
   text-align: center;
-  background-color: #fff; /* White background */
   padding: 1rem;
+  background-color: #F9F9F9; /* Light gray background */
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .recipe-of-the-day img {
@@ -190,10 +190,9 @@ form button:hover {
 /* Contact Us Page Styles */
 .contact-info {
   margin-top: 2rem;
-  background-color: #fff; /* White background */
   padding: 1rem;
+  background-color: #F9F9F9; /* Light gray background */
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer Styles */
@@ -233,7 +232,7 @@ footer {
   }
 
   .recipe-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
   }
 }
 
@@ -247,6 +246,6 @@ footer {
   }
 
   .recipe-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* 1 column for mobile */
   }
 }
