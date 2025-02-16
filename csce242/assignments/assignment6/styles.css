@@ -1,126 +1,135 @@
-/* General Styles */
 body {
-    font-family: Arial, sans-serif; /* Use a clean, sans-serif font */
-    text-align: center; /* Center-align all text */
-    background-color: #1A1A2E; /* Dark navy background for the page */
-    color: #E0E0E0; /* Light gray text color for readability */
-    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #F5F5DC; 
+    color: #333333;
+    margin: 0;
 }
 
-/* Header Styles */
 header h1, header h2 {
-    color: #E0E0E0; /* Light gray color for header text */
+    color: #333333;
 }
 
-/* Section Headings */
 h2 {
-    color: #FF6F61; /* Coral color for section headings */
+    color: #FF6F61;
 }
 
-/* Navigation Menu */
 nav {
-    background-color: #16213E; /* Darker navy for the nav background */
-    padding: 10px; /* Add some padding for spacing */
+    background-color: #E0D8C0;
+    padding: 10px;
 }
 
 #menu {
-    list-style-type: none; /* Remove bullet points from the list */
-    padding: 0; /* Remove default padding */
-    display: none; /* Hide the menu by default */
+    list-style-type: none;
+    padding: 0;
+    display: none;
 }
 
 #menu li {
-    display: inline-block; /* Display menu items inline */
-    margin: 0 10px; /* Add spacing between menu items */
+    display: inline-block;
+    margin: 0 10px;
 }
 
 #menu a {
-    text-decoration: none; /* Remove underline from links */
-    color: #E0E0E0; /* Light gray text color for links */
-    cursor: pointer; /* Show pointer cursor on hover */
+    text-decoration: none;
+    color: #333333;
+    cursor: pointer;
 }
 
-/* Menu Toggle Button */
 #menu-toggle {
-    display: block; /* Ensure the button is visible */
-    background: none; /* Remove default button background */
-    border: none; /* Remove default button border */
-    font-size: 20px; /* Increase font size for visibility */
-    cursor: pointer; /* Show pointer cursor on hover */
-    color: #E0E0E0; /* Light gray color for the button text */
+    display: block;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333333;
 }
 
-/* Exercise Sections */
 #exercise1, #exercise2 {
-    display: none; /* Hide sections by default */
-    margin-top: 20px; /* Add spacing above the sections */
-    background-color: #16213E; /* Darker navy for section backgrounds */
-    padding: 20px; /* Add padding inside the sections */
-    border-radius: 10px; /* Round the corners of the sections */
-    width: 50%; /* Set a fixed width for the sections */
-    margin: 20px auto; /* Center the sections horizontally */
+    display: none;
+    margin-top: 20px;
+    background-color: #E0D8C0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 20px auto;
 }
 
-/* Show Exercise 1 by Default */
 #exercise1 {
-    display: block; /* Display Exercise 1 by default */
+    display: block;
 }
 
-/* Transport Image Styling */
 #transportImage img {
-    max-width: 100px; /* Limit the image width */
-    margin-top: 10px; /* Add spacing above the image */
+    max-width: 100px;
+    margin-top: 10px;
 }
 
-/* Button Styling */
 button {
-    background-color: #FF6F61; /* Coral background for buttons */
-    color: white; /* White text color for buttons */
-    border: none; /* Remove default button border */
-    padding: 10px 15px; /* Add padding for button size */
-    cursor: pointer; /* Show pointer cursor on hover */
-    border-radius: 5px; /* Round the corners of buttons */
-    margin: 5px; /* Add spacing between buttons */
-    font-size: 14px; /* Set a readable font size */
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 14px;
 }
 
 button:hover {
-    background-color: #E2584A; /* Darker coral on hover for interactivity */
+    background-color: #E2584A;
 }
 
-/* Heart Container */
 #heart-container {
-    margin: 20px auto; /* Center the heart container */
-    width: 60px; /* Set a fixed width */
-    height: 60px; /* Set a fixed height */
+    margin: 20px auto;
+    width: 60px;
+    height: 60px;
 }
 
-/* Heart Shape Styling */
 #heart {
-    width: 60px; /* Set heart width */
-    height: 54px; /* Set heart height */
-    background-color: white; /* Default white background for the heart */
-    position: relative; /* Enable positioning for pseudo-elements */
-    transform: rotate(-45deg); /* Rotate the heart to create the shape */
-    margin: 10px auto; /* Center the heart */
+    width: 60px;
+    height: 54px;
+    background-color: white;
+    position: relative;
+    transform: rotate(-45deg);
+    margin: 10px auto;
 }
 
-/* Heart Pseudo-Elements for Shape */
 #heart:before, #heart:after {
-    content: ""; /* Required for pseudo-elements */
-    width: 60px; /* Match heart width */
-    height: 54px; /* Match heart height */
-    background-color: inherit; /* Inherit the heart's background color */
-    border-radius: 50%; /* Create circular shapes */
-    position: absolute; /* Position relative to the heart */
+    content: "";
+    width: 60px;
+    height: 54px;
+    background-color: inherit;
+    border-radius: 50%;
+    position: absolute;
 }
 
 #heart:before {
-    top: -30px; /* Position the top circle */
-    left: 0; /* Align with the left edge */
+    top: -30px;
+    left: 0;
 }
 
 #heart:after {
-    left: 30px; /* Position the right circle */
-    top: 0; /* Align with the top edge */
+    left: 30px;
+    top: 0;
+}
+
+footer {
+    background-color: #E0D8C0;
+    padding: 10px;
+    margin-top: 20px;
+    border-top: 1px solid #FF6F61;
+}
+
+footer p {
+    margin: 0;
+    color: #333333;
+}
+
+footer a {
+    color: #FF6F61;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
