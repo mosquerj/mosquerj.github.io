@@ -93,8 +93,9 @@ nav a:hover {
 }
 
 .featured-recipe img {
-  max-width: 300px;
-  height: auto;
+  width: 300px; /* Fixed width */
+  height: 300px; /* Fixed height */
+  object-fit: cover; /* Ensures the image fills the container without distortion */
   border-radius: 10px;
 }
 
@@ -124,10 +125,12 @@ nav a:hover {
 }
 
 .recipe-card img {
-  max-width: 100%;
-  height: auto;
+  width: 150px; /* Fixed width */
+  height: 150px; /* Fixed height */
+  object-fit: cover; /* Ensures the image fills the container without distortion */
   border-radius: 10px;
-  display: block; /* Ensures the image behaves as a block element */
+  display: block;
+  margin: 0 auto; /* Centers the image */
 }
 
 /* Submit a Recipe Page Styles */
@@ -190,8 +193,9 @@ form button:hover {
 }
 
 .recipe-of-the-day img {
-  max-width: 300px;
-  height: auto;
+  width: 300px; /* Fixed width */
+  height: 300px; /* Fixed height */
+  object-fit: cover; /* Ensures the image fills the container without distortion */
   border-radius: 10px;
 }
 
@@ -246,7 +250,8 @@ footer {
 
 @media (max-width: 480px) {
   .featured-recipe img {
-    max-width: 100%;
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Maintain aspect ratio */
   }
 
   .search-bar input {
@@ -255,5 +260,10 @@ footer {
 
   .recipe-grid {
     grid-template-columns: 1fr; /* 1 column for mobile */
+  }
+
+  .recipe-card img {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Maintain aspect ratio */
   }
 }
