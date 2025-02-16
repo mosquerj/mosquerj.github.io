@@ -9,6 +9,12 @@ body {
   color: #333; /* Dark gray text */
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Prevents inline spacing issues */
+}
+
 /* Header Styles */
 header {
   background-color: #008C45; /* Green from Italian flag */
@@ -110,6 +116,7 @@ nav a:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.3s ease;
+  width: 100%; /* Ensures the card takes up the full width of its container */
 }
 
 .recipe-card:hover {
@@ -120,6 +127,7 @@ nav a:hover {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+  display: block; /* Ensures the image behaves as a block element */
 }
 
 /* Submit a Recipe Page Styles */
