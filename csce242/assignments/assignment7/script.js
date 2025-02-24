@@ -26,11 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
         climberImg.style.display = "block";
         climberImg.style.width = "60px";
 
-        // Position the climber at the bottom
+        // Position the climber at the **bottom** of the stairs
         const firstStep = stairsDiv.children[0];
         if (firstStep) {
             climberImg.style.position = "absolute";
-            climberImg.style.bottom = `${firstStep.offsetTop}px`;
+            climberImg.style.bottom = "0"; // Start at the bottom
             climberImg.style.left = "50%";
             climberImg.style.transform = "translateX(-50%)";
         }
