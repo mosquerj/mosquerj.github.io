@@ -25,18 +25,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Show the popup with the selected title and image
     const showPopup = (title, imagePath) => {
+        console.log("Opening popup for:", title, "with image:", imagePath); // Debugging log
         popupTitle.textContent = title;
         popupImage.src = imagePath;
-        popup.classList.remove("hidden");
+        popup.classList.add("show"); // Corrected class for display
     };
 
     // Close the popup when the close button is clicked
-    closeBtn.addEventListener("click", () => popup.classList.add("hidden"));
+    closeBtn.addEventListener("click", () => popup.classList.remove("show"));
 
     // Close the popup when clicking outside of it
     popup.addEventListener("click", (event) => {
         if (event.target === popup) {
-            popup.classList.add("hidden");
+            popup.classList.remove("show");
         }
     });
 });
