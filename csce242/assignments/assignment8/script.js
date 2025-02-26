@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
     const images = {
-        "Happy Birthday": "images/birthday.png",
-        "Crazy Clown": "images/clown.png",
-        "It's Raining": "images/rain.png",
-        "Quiet Time": "images/read.png",
-        "Working Hard": "images/shovel.png",
-        "Work from Home": "images/work.png"
+        "Happy Birthday": "images/birthday.jpg",
+        "Crazy Clown": "images/clown.jpg",
+        "It's Raining": "images/rain.jpg",
+        "Quiet Time": "images/read.jpg",
+        "Working Hard": "images/shovel.jpg",
+        "Work from Home": "images/work.jpg"
     };
 
     const titlesContainer = document.getElementById("titles-container");

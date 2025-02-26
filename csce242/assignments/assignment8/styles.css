@@ -1,14 +1,14 @@
 :root {
-    --background-color: #f4f7fa;
-    --container-bg: #ffffff;
-    --primary-text: #2c3e50;
-    --secondary-text: #34495e;
-    --highlight-text: #e74c3c;
-    --title-color: #3498db;
-    --popup-bg: #ffffff;
-    --popup-shadow: rgba(0, 0, 0, 0.2);
-    --close-btn: #95a5a6;
-    --close-btn-hover: #e74c3c;
+    --background-color: #f0f8ff; /* Light blue background */
+    --container-bg: #ffffff; /* White container background */
+    --primary-text: #2c3e50; /* Dark blue text */
+    --secondary-text: #34495e; /* Slightly lighter blue text */
+    --highlight-text: #e74c3c; /* Red for hover effects */
+    --title-color: #3498db; /* Blue for titles */
+    --popup-bg: #ffffff; /* White popup background */
+    --popup-shadow: rgba(0, 0, 0, 0.2); /* Light shadow for popup */
+    --close-btn: #95a5a6; /* Gray for close button */
+    --close-btn-hover: #e74c3c; /* Red for close button hover */
 }
 
 body {
@@ -82,11 +82,11 @@ h1 {
     text-align: center;
     width: 300px;
     z-index: 1000;
-    display: none;
+    display: none; /* Popup is hidden by default */
 }
 
 #popup.show {
-    display: block;
+    display: block; /* Show popup when the "show" class is added */
 }
 
 #popup h2 {
@@ -116,5 +116,5 @@ h1 {
 }
 
 .hidden {
-    display: none;
+    display: none; /* Ensure the "hidden" class hides elements */
 }
