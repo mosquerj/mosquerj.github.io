@@ -1,0 +1,120 @@
+:root {
+    --background-color: #f4f7fa;
+    --container-bg: #ffffff;
+    --primary-text: #2c3e50;
+    --secondary-text: #34495e;
+    --highlight-text: #e74c3c;
+    --title-color: #3498db;
+    --popup-bg: #ffffff;
+    --popup-shadow: rgba(0, 0, 0, 0.2);
+    --close-btn: #95a5a6;
+    --close-btn-hover: #e74c3c;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--primary-text);
+    margin: 0;
+    padding: 20px;
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--container-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--popup-shadow);
+}
+
+h1 {
+    color: var(--title-color);
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: var(--secondary-text);
+    font-weight: bold;
+}
+
+#titles-container {
+    margin-top: 20px;
+}
+
+.title {
+    color: var(--primary-text);
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.title:hover {
+    color: var(--highlight-text);
+}
+
+.image-credit {
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--secondary-text);
+}
+
+.image-credit a {
+    color: var(--title-color);
+    text-decoration: none;
+}
+
+.image-credit a:hover {
+    text-decoration: underline;
+}
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--popup-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--popup-shadow);
+    text-align: center;
+    width: 300px;
+    z-index: 1000;
+    display: none;
+}
+
+#popup.show {
+    display: block;
+}
+
+#popup h2 {
+    color: var(--title-color);
+    margin-bottom: 10px;
+}
+
+#popup img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--close-btn);
+    transition: color 0.3s ease-in-out;
+}
+
+#close:hover {
+    color: var(--close-btn-hover);
+}
+
+.hidden {
+    display: none;
+}
