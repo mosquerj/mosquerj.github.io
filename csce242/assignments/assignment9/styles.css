@@ -74,4 +74,13 @@ h2 {
 .modal-body p {
     flex: 1;
     white-space: normal;
+    color: #f0f0f0;
+}
+
+.modal-body strong {
+    color: #ffcc00;
+}
+
+.modal-body span {
+    color: #d0d0d0;
 }
