@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mama’s Meatballs - Browse</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Mama’s Meatballs</h1>
+    <div class="hamburger" onclick="toggleNav()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav id="nav">
+      <a href="index.html">Home</a>
+      <a href="submit.html">Submit a Recipe</a>
+      <a href="browse.html">Browse</a>
+      <a href="recipe.html">Recipe of the Day</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h2>Browse Recipes</h2>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for recipes...">
+      <button>Search</button>
+    </div>
+    <div class="recipe-grid" id="recipe-grid">
+      <!-- Recipes will be dynamically inserted here -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mama’s Meatballs</p>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      const nav = document.getElementById("nav");
+      nav.classList.toggle("active");
+    }
+
+    // Fetch and display recipes
+    fetch('meatballs.json') // Relative path to the JSON file
+      .then(response => response.json())
+      .then(data => {
+        const recipeGrid = document.getElementById('recipe-grid');
+        data.forEach(recipe => {
+          const recipeCard = document.createElement('div');
+          recipeCard.className = 'recipe-card';
+          recipeCard.innerHTML = `
+            <img src="${recipe.img_name}" alt="${recipe.name}">
+            <h3>${recipe.name}</h3>
+            <p>${recipe.description}</p>
+          `;
+          recipeCard.onclick = () => {
+            window.location.href = `recipe-preview.html?id=${recipe._id}`;
+          };
+          recipeGrid.appendChild(recipeCard);
+        });
+      })
+      .catch(error => console.error('Error fetching recipes:', error));
+  </script>
+</body>
+</html>

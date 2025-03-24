@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classic Meatballs - Mama’s Meatballs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Mama’s Meatballs</h1>
+    <div class="hamburger" onclick="toggleNav()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav id="nav">
+      <a href="index.html">Home</a>
+      <a href="submit.html">Submit a Recipe</a>
+      <a href="browse.html">Browse</a>
+      <a href="recipe.html">Recipe of the Day</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="content">
+    <div id="recipe-details">
+      <!-- Recipe details will be dynamically inserted here -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mama’s Meatballs</p>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      const nav = document.getElementById("nav");
+      nav.classList.toggle("active");
+    }
+
+    // Fetch and display specific recipe details
+    const urlParams = new URLSearchParams(window.location.search);
+    const recipeId = urlParams.get('id');
+
+    fetch('meatballs.json') // Relative path to the JSON file
+      .then(response => response.json())
+      .then(data => {
+        const recipe = data.find(r => r._id == recipeId);
+        if (recipe) {
+          const recipeDetails = document.getElementById('recipe-details');
+          recipeDetails.innerHTML = `
+            <h2>${recipe.name}</h2>
+            <img src="${recipe.img_name}" alt="${recipe.name}">
+            <p>${recipe.description}</p>
+            <h3>Ingredients</h3>
+            <ul>
+              ${recipe.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+            </ul>
+            <h3>Instructions</h3>
+            <ol>
+              ${recipe.instructions.map(instruction => `<li>${instruction}</li>`).join('')}
+            </ol>
+          `;
+        }
+      })
+      .catch(error => console.error('Error fetching recipe details:', error));
+  </script>
+</body>
+</html>
